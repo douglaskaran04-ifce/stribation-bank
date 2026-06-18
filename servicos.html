@@ -1,15 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Stribation Bank</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
-
 <body>
-  <h1>Página em construção</h1>
-</body>
 
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <span class="logo">STRIBATION BANK</span>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Conquiste mais liberdade financeira hoje mesmo!</h1>
+      <p>Descubra serviços bancários mais inteligentes, com segurança de ponta e uma experiência móvel perfeita.</p>
+      <div class="hero-botoes">
+        <a href="#servicos" class="botao">Ver Serviços</a>
+        <a href="#contato" class="botao-outline">Fale conosco</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="secao" id="servico">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+
+      <div class="itens">
+
+        <div class="item destaque">
+          <!-- Coloque aqui uma imagem de burger.
+               Salve na pasta images/ com o nome burger-destaque.jpg -->
+          <img src="images/burger-destaque.jpg" alt="Imagem do Empréstimo" class="item-img"/>
+          <div class="item-corpo">
+            <div class="item-topo">
+              <h3>Empréstimos Especiais</h3>
+              <span class="preco">R$ xxxx</span>
+            </div>
+            <p>Descrição do serviço.</p>
+            <div class="item-tags">
+              <span class="tag">Destaque</span>
+              <span class="tag">Mais pedido</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <!-- Coloque aqui uma imagem de burger.
+               Salve na pasta images/ com o nome burger-classico.jpg -->
+          <img src="images/burger-classico.jpg" alt="Conta Digital" class="item-img"/>
+          <div class="item-corpo">
+            <div class="item-topo">
+              <h3>Conta Digital</h3>
+              <span class="preco">R$ xxxxx</span>
+            </div>
+            <p>Descrição do serviço.</p>
+            <div class="item-tags">
+              <span class="tag">Clássico</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <!-- Coloque aqui uma imagem de burger.
+               Salve na pasta images/ com o nome burger-vegano.jpg -->
+          <img src="images/burger-vegano.jpg" alt="Seguros" class="item-img"/>
+          <div class="item-corpo">
+            <div class="item-topo">
+              <h3>Seguros</h3>
+              <span class="preco">R$ XXXX</span>
+            </div>
+            <p>Descrição do Serviço.</p>
+            <div class="item-tags">
+              <span class="tag">Vegano</span>
+              <span class="tag">Saudável</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <!-- Coloque aqui uma imagem de burger.
+               Salve na pasta images/ com o nome burger-frango.jpg -->
+          <img src="images/burger-frango.jpg" alt="Cartão de Crédito" class="item-img"/>
+          <div class="item-corpo">
+            <div class="item-topo">
+              <h3>Cartão de Crédito</h3>
+              <span class="preco">R$ xxxxx</span>
+            </div>
+            <p>Descrição do Serviço.</p>
+            <div class="item-tags">
+              <span class="tag">Frango</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="secao secao-clara" id="contato">
+    <div class="container">
+      <h2>Fale conosco</h2>
+      <div class="contato-infos">
+        <div class="contato-item">
+          <h3>Endereço</h3>
+          <p>Rua dos Sabores, 42, Centro</p>
+        </div>
+        <div class="contato-item">
+          <h3>Horário</h3>
+          <p>Ter a Dom: 18h às 23h</p>
+        </div>
+        <div class="contato-item">
+          <h3>Telefone</h3>
+          <p>(85) 99999-9999</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Stribation Bank. Todos os direitos reservados.</p>
+      <nav class="footer-nav">
+        <a href="#">Política</a>
+        <a href="#">Termos</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <a href="#" class="voltar-topo">↑</a>
+
+</body>
 </html>
