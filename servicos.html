@@ -1,150 +1,154 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stribation Bank</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
-</head>
-<body>
 
-  <!-- HEADER -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stribation Bank</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="images/logo.png" >
+</head>
+
+  <!--HEADER Nathiara-->
   <header>
-    <div class="container">
-      <span class="logo">STRIBATION BANK</span>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
+      <div class="container">
+
+            <div class="logo">
+                <h1>Stribation Bank</h1>
+                <p>Dinheiro não é tudo, mas é 100%.</p>
+            </div>
+
+          <nav>
+              <a href="index.html">Home</a>
+              <a href="sobre.html">Sobre</a>
+              <a href="servicos.html">Serviços</a>
+              <a href="contato.html">Contato</a>
+              <a href="contato.html">Acesso Conta</a>
+          </nav>
+      </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <h1>Conquiste mais liberdade financeira hoje mesmo!</h1>
-      <p>Descubra serviços bancários mais inteligentes, com segurança de ponta e uma experiência móvel perfeita.</p>
-      <div class="hero-botoes">
-        <a href="#servicos" class="botao">Ver Serviços</a>
-        <a href="#contato" class="botao-outline">Fale conosco</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVIÇOS -->
-  <section class="secao" id="servico">
-    <div class="container">
-      <h2>Nossos Serviços</h2>
-
-      <div class="itens">
-
-        <div class="item destaque">
-          <!-- Coloque aqui uma imagem de burger.
-               Salve na pasta images/ com o nome burger-destaque.jpg -->
-          <img src="images/burger-destaque.jpg" alt="Imagem do Empréstimo" class="item-img"/>
-          <div class="item-corpo">
-            <div class="item-topo">
-              <h3>Empréstimos Especiais</h3>
-              <span class="preco">R$ xxxx</span>
-            </div>
-            <p>Descrição do serviço.</p>
-            <div class="item-tags">
-              <span class="tag">Destaque</span>
-              <span class="tag">Mais pedido</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <!-- Coloque aqui uma imagem de burger.
-               Salve na pasta images/ com o nome burger-classico.jpg -->
-          <img src="images/burger-classico.jpg" alt="Conta Digital" class="item-img"/>
-          <div class="item-corpo">
-            <div class="item-topo">
-              <h3>Conta Digital</h3>
-              <span class="preco">R$ xxxxx</span>
-            </div>
-            <p>Descrição do serviço.</p>
-            <div class="item-tags">
-              <span class="tag">Clássico</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <!-- Coloque aqui uma imagem de burger.
-               Salve na pasta images/ com o nome burger-vegano.jpg -->
-          <img src="images/burger-vegano.jpg" alt="Seguros" class="item-img"/>
-          <div class="item-corpo">
-            <div class="item-topo">
-              <h3>Seguros</h3>
-              <span class="preco">R$ XXXX</span>
-            </div>
-            <p>Descrição do Serviço.</p>
-            <div class="item-tags">
-              <span class="tag">Vegano</span>
-              <span class="tag">Saudável</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <!-- Coloque aqui uma imagem de burger.
-               Salve na pasta images/ com o nome burger-frango.jpg -->
-          <img src="images/burger-frango.jpg" alt="Cartão de Crédito" class="item-img"/>
-          <div class="item-corpo">
-            <div class="item-topo">
-              <h3>Cartão de Crédito</h3>
-              <span class="preco">R$ xxxxx</span>
-            </div>
-            <p>Descrição do Serviço.</p>
-            <div class="item-tags">
-              <span class="tag">Frango</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section class="secao secao-clara" id="contato">
-    <div class="container">
-      <h2>Fale conosco</h2>
-      <div class="contato-infos">
-        <div class="contato-item">
-          <h3>Endereço</h3>
-          <p>Rua dos Sabores, 42, Centro</p>
-        </div>
-        <div class="contato-item">
-          <h3>Horário</h3>
-          <p>Ter a Dom: 18h às 23h</p>
-        </div>
-        <div class="contato-item">
-          <h3>Telefone</h3>
-          <p>(85) 99999-9999</p>
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Conquiste mais liberdade financeira hoje mesmo!</h1>
+        <p>Descubra serviços bancários mais inteligentes, com segurança de ponta e uma experiência móvel perfeita.</p>
+        <div class="hero-botoes">
+          <a href="#servico" class="botao" aria-label="Explorar nossos serviços bancários">Ver Serviços</a>
+          <a href="#contato" class="botao-outline" aria-label="Entrar em contato com o atendimento">Fale conosco</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
+    <!-- SERVIÇOS -->
+    <section class="secao" id="servico" aria-labelledby="servicos-title">
+      <div class="container">
+        <h2 id="servicos-title">Nossos Serviços</h2>
+
+        <div class="itens">
+
+          <div class="item">
+            <span class="badge-absoluto">Destaque</span>
+            <img src="images/emprestimo.png" alt="Pessoa sorrindo usando aplicativo de empréstimo do banco no celular" class="item-img"/>
+            <div class="item-corpo">
+              <div class="item-topo">
+                <h3>Empréstimos Especiais</h3>
+                <span class="preco">Taxa Fixa</span>
+              </div>
+              <p>Crédito rápido e fácil com as melhores taxas do mercado para você realizar seus projetos.</p>
+              <div class="item-tags">
+                <span class="tag">Mais pedido</span>
+                <span class="tag">Aprovação na hora</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/conta_digital.png" alt="Interface moderna de aplicativo bancário com tema escuro e detalhes em azul num smartphone" class="item-img"/>
+            <div class="item-corpo">
+              <div class="item-topo">
+                <h3>Conta Digital</h3>
+                <span class="preco">Grátis</span>
+              </div>
+              <p>Uma conta 100% digital, sem tarifas de manutenção e com Pix ilimitado para você.</p>
+              <div class="item-tags">
+                <span class="tag">Clássico</span>
+                <span class="tag">Sem anuidade</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/seguros_banco.png" alt="Ilustração conceitual 3D de um escudo azul protegendo uma casa e uma família, representando segurança e seguro" class="item-img"/>
+            <div class="item-corpo">
+              <div class="item-topo">
+                <h3>Seguros</h3>
+                <span class="preco">A partir R$ 19/mês</span>
+              </div>
+              <p>Proteja seu patrimônio e sua família com nossas opções de seguros de vida, auto e residencial.</p>
+              <div class="item-tags">
+                <span class="tag">Proteção</span>
+                <span class="tag">Tranquilidade</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/cartao_credito_.png" alt="Cartão de crédito metálico azul escuro com design premium e moderno flutuando" class="item-img"/>
+            <div class="item-corpo">
+              <div class="item-topo">
+                <h3>Cartão de Crédito</h3>
+                <span class="preco">Cashback 1%</span>
+              </div>
+              <p>Cartão internacional com limite flexível e programa de pontos que nunca expiram.</p>
+              <div class="item-tags">
+                <span class="tag">Premium</span>
+                <span class="tag">Benefícios VIP</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="secao secao-clara" id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title">Fale conosco</h2>
+        <div class="contato-infos">
+          <div class="contato-item">
+            <h3>Endereço</h3>
+            <p>Av. Faria Lima, 3400, São Paulo - SP</p>
+          </div>
+          <div class="contato-item">
+            <h3>Horário</h3>
+            <p>Seg a Sex: 09h às 18h</p>
+          </div>
+          <div class="contato-item">
+            <h3>Telefone</h3>
+            <p>0800 123 4567</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+   <!-- FOOTER -->
   <footer>
     <div class="container">
       <p>© 2026 Stribation Bank. Todos os direitos reservados.</p>
       <nav class="footer-nav">
         <a href="#">Política</a>
         <a href="#">Termos</a>
+        <a href="#">Contato</a>
       </nav>
     </div>
   </footer>
 
   <!-- BOTÃO VOLTAR AO TOPO -->
-  <a href="#" class="voltar-topo">↑</a>
+  <a href="servicos.html" class="voltar-topo" aria-label="Voltar ao topo da página">↑</a>
 
-</body>
 </html>
