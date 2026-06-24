@@ -14,8 +14,6 @@
     --cor-fundo: #f5f7fa;
     --cor-branca: #ffffff;
     --cor-texto: #333333;
-    --cor-destaque: #ff9204;
-    --cor-principal: #e08000;
 
     --fonte-texto: 'Roboto', sans-serif;
     --fonte-titulo: 'Playfair Display', serif;
@@ -25,7 +23,7 @@
 
 /*  GERAL */
 
-main {
+body {
     font-family: var(--fonte-texto);
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
@@ -60,15 +58,9 @@ header {
 
 header .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
-    gap: 15px;
-}
-
-.logo {
-    text-align: center;
+    padding: 15px 0; 
 }
 
 .logo h1 {
@@ -82,9 +74,8 @@ header .container {
 
 header nav {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 header nav a {
@@ -100,29 +91,27 @@ header nav a:hover {
 /*HERO */
 
 .hero {
-    margin-top: 6%;
-    border-color: #d4af37;
-    border-bottom: #d4af37;
-    padding: 180px 0 60px;
+    padding: 180px 0 80px; 
     background-color: var(--cor-primaria);
     color: white;
 }
 
 .hero .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
+    flex-direction: column;  
+    align-items: center;     
+    text-align: center;     
+    gap: 40px;               
 }
+
 
 .hero-imagem {
     width: 100%;
-    order: 1;
+    order: 1;               
 }
 
 .hero-imagem img {
-    max-width: 500px;
+    max-width: 500px;      
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -130,190 +119,73 @@ header nav a:hover {
 
 .hero-texto {
     width: 100%;
-    max-width: 700px;
-    order: 2;
+    max-width: 700px;       
+    order: 2;                
 }
 
-.hero h1,
 .hero-texto h2 {
     font-family: var(--fonte-titulo);
-    font-size: 2.2rem;
+    font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
-.hero p,
 .hero-texto p {
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;     
 }
+
 
 .hero-botoes {
-    order: 3;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-}
-
-.botao, .botao-outline {
-    display: inline-block;
-    padding: 14px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-align: center;
-    transition: 0.3s;
-    width: 100%;
+    order: 3;                
 }
 
 .botao {
+    display: inline-block;
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
+    padding: 14px 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.3s;
 }
 
 .botao:hover {
     opacity: 0.8;
 }
 
-.botao-outline {
-    background-color: transparent;
-    color: var(--cor-secundaria);
-    border: 2px solid var(--cor-secundaria);
-}
-
-.botao-outline:hover {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
-}
-
 /*SEÇÕES*/
 
 .secao {
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .secao h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: var(--cor-primaria);
     font-family: var(--fonte-titulo);
-    font-size: 2rem;
 }
 
 .secao-clara {
     background-color: white;
 }
 
-/* ITENS (SERVIÇOS) */
-
-.itens {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.item {
-    position: relative;
-    background-color: white;
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.badge-absoluto {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    z-index: 10;
-}
-
-.item-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.item-corpo {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.item-topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-}
-
-.item-topo h3 {
-    color: var(--cor-primaria);
-    font-size: 1.2rem;
-}
-
-.preco {
-    font-weight: bold;
-    color: var(--cor-secundaria);
-}
-
-.item-tags {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.tag {
-    background-color: var(--cor-fundo);
-    color: var(--cor-primaria);
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-/* CONTATO */
-
-.contato-infos {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.contato-item {
-    background-color: var(--cor-fundo);
-    padding: 20px;
-    border-radius: var(--radius);
-    text-align: center;
-}
-
-.contato-item h3 {
-    color: var(--cor-primaria);
-    margin-bottom: 10px;
-}
-
 /*VANTAGENS */
 
 .vantagens {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .vantagem {
+    flex: 1; 
     background-color: white;
     padding: 20px;
     text-align: center;
     border-radius: var(--radius);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    
 }
 
 .vantagem img {
@@ -329,11 +201,12 @@ header nav a:hover {
 
 .passos {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row; 
+    gap: 30px;
 }
 
 .passo {
+    flex: 1;
     background-color: var(--cor-primaria);
     color: white;
     padding: 30px;
@@ -343,7 +216,7 @@ header nav a:hover {
 
 .passo h3 {
     font-size: 1.2rem;
-}
+} 
 
 /* DEPOIMENTOS*/
 
@@ -351,14 +224,13 @@ header nav a:hover {
     background-color: white;
     max-width: 700px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 40px;
     border-radius: var(--radius);
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 .depoimentos p {
-    margin-bottom: 15px;
+    margin-bottom: var(--radius);
     font-style: italic;
 }
 
@@ -368,19 +240,17 @@ header nav a:hover {
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 .dica-financeira h2 {
     margin-bottom: 15px;
     font-family: var(--fonte-titulo);
-    font-size: 1.8rem;
 }
 
 .dica-financeira p {
-    max-width: 700px;
+    max-width: 700px; 
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 /* FOOTER*/
@@ -388,25 +258,22 @@ header nav a:hover {
 footer {
     background-color: var(--cor-primaria);
     color: white;
-    padding: 40px 0;
-    text-align: center;
+    padding: 60px 0; 
 }
 
 footer .container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between; 
     align-items: center;
-    gap: 20px;
 }
 
 .footer-nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 footer a {
+    display: block;
     color: white;
 }
 
@@ -419,115 +286,20 @@ footer a:hover {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    width: 45px;
-    height: 45px;
+
+    width: 40px;
+    height: 40px;
+
     background: var(--cor-secundaria);
     color: var(--cor-primaria);
+
     border-radius: 50%;
+
     text-align: center;
-    line-height: 45px;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    z-index: 1000;
+    line-height: 40px;
 }
 
 .voltar-topo:hover{
-    background: white;
+    background: var(--cor-primaria);
 }
 
-/* =========================================
-   MEDIA QUERIES - TABLET (min-width: 768px)
-   ========================================= */
-@media (min-width: 768px) {
-    header .container {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 15px 0;
-    }
-
-    .logo {
-        text-align: left;
-    }
-
-    header nav {
-        gap: 20px;
-    }
-
-    .hero {
-        padding: 180px 0 80px;
-        margin-top: 6%
-    }
-
-    .hero h1, .hero-texto h2 {
-        font-size: 3rem;
-    }
-
-    .hero-botoes {
-        flex-direction: row;
-        justify-content: center;
-        width: auto;
-    }
-
-    .botao, .botao-outline {
-        width: auto;
-    }
-
-    .itens {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .item {
-        flex: 1 1 calc(50% - 20px);
-    }
-
-    .contato-infos {
-        flex-direction: row;
-    }
-
-    .contato-item {
-        flex: 1;
-    }
-
-    .vantagens {
-        flex-direction: row;
-    }
-
-    .vantagem {
-        flex: 1;
-    }
-
-    .passos {
-        flex-direction: row;
-    }
-
-    .passo {
-        flex: 1;
-    }
-
-    footer .container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    footer p {
-        text-align: left;
-    }
-}
-
-/* =========================================
-   MEDIA QUERIES - DESKTOP (min-width: 1024px)
-   ========================================= */
-@media (min-width: 1024px) {
-    .container {
-        width: 85%;
-    }
-
-    .item {
-        flex: 1 1 calc(25% - 20px);
-    }
-
-    .hero .container {
-        max-width: 800px;
-    }
-}
