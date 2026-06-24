@@ -303,3 +303,175 @@ footer a:hover {
     background: var(--cor-primaria);
 }
 
+/* =========================================
+   ESTILOS PAGE SERVIÇOS
+   ========================================= */
+
+:root {
+    --cor-destaque: #ff9204;
+    --cor-principal: #e08000;
+}
+
+/* BOTÃO OUTLINE ESPECÍFICO E HERO BOTOES RESPONSIVO PARA SERVIÇOS */
+.botao-outline {
+    display: inline-block;
+    padding: 14px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: 0.3s;
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-secundaria);
+}
+
+.botao-outline:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.hero[aria-labelledby="hero-title"] .hero-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.hero[aria-labelledby="hero-title"] .botao, 
+.hero[aria-labelledby="hero-title"] .botao-outline {
+    width: 100%;
+}
+
+/* ITENS (SERVIÇOS) */
+.itens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item {
+    position: relative;
+    background-color: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.badge-absoluto {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.item-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item-corpo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.item-topo h3 {
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+}
+
+.preco {
+    font-weight: bold;
+    color: var(--cor-secundaria);
+}
+
+.item-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* CONTATO */
+.contato-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato-item {
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.contato-item h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   MEDIA QUERIES PARA OS NOVOS COMPONENTES
+   ========================================= */
+@media (min-width: 768px) {
+    .hero[aria-labelledby="hero-title"] .hero-botoes {
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+    }
+
+    .hero[aria-labelledby="hero-title"] .botao, 
+    .hero[aria-labelledby="hero-title"] .botao-outline {
+        width: auto;
+    }
+
+    .itens {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .contato-infos {
+        flex-direction: row;
+    }
+
+    .contato-item {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .item {
+        flex: 1 1 calc(25% - 20px);
+    }
+}
+
