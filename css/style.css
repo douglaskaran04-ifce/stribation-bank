@@ -1,1 +1,305 @@
-/* Estilos globais */
+/*RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*VARIÁVEIS*/
+
+:root {
+    --cor-primaria: #0a2342;
+    --cor-secundaria: #d4af37;
+    --cor-fundo: #f5f7fa;
+    --cor-branca: #ffffff;
+    --cor-texto: #333333;
+
+    --fonte-texto: 'Roboto', sans-serif;
+    --fonte-titulo: 'Playfair Display', serif;
+
+    --radius: 12px;
+}
+
+/*  GERAL */
+
+body {
+    font-family: var(--fonte-texto);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0; 
+}
+
+.logo h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+}
+
+.logo p {
+    font-size: 0.9rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color: var(--cor-secundaria);
+}
+
+/*HERO */
+
+.hero {
+    padding: 180px 0 80px; 
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    text-align: center;     
+    gap: 40px;               
+}
+
+
+.hero-imagem {
+    width: 100%;
+    order: 1;               
+}
+
+.hero-imagem img {
+    max-width: 500px;      
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.hero-texto {
+    width: 100%;
+    max-width: 700px;       
+    order: 2;                
+}
+
+.hero-texto h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-texto p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;     
+}
+
+
+.hero-botoes {
+    order: 3;                
+}
+
+.botao {
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 14px 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    opacity: 0.8;
+}
+
+/*SEÇÕES*/
+
+.secao {
+    padding: 80px 0;
+}
+
+.secao h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-titulo);
+}
+
+.secao-clara {
+    background-color: white;
+}
+
+/*VANTAGENS */
+
+.vantagens {
+    display: flex;
+    gap: 30px;
+}
+
+.vantagem {
+    flex: 1; 
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: var(--radius);
+    
+}
+
+.vantagem img {
+    width: 80px;
+    margin: 0 auto 10px;
+}
+
+.vantagem h3 {
+    color: var(--cor-primaria);
+}
+
+/* PASSOS (COMO FUNCIONA) */
+
+.passos {
+    display: flex;
+    flex-direction: row; 
+    gap: 30px;
+}
+
+.passo {
+    flex: 1;
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 30px;
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.passo h3 {
+    font-size: 1.2rem;
+} 
+
+/* DEPOIMENTOS*/
+
+.depoimentos {
+    background-color: white;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.depoimentos p {
+    margin-bottom: var(--radius);
+    font-style: italic;
+}
+
+/* ASIDE*/
+
+.dica-financeira {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    padding: 60px 0;
+}
+
+.dica-financeira h2 {
+    margin-bottom: 15px;
+    font-family: var(--fonte-titulo);
+}
+
+.dica-financeira p {
+    max-width: 700px; 
+    margin: 0 auto;
+}
+
+/* FOOTER*/
+
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 60px 0; 
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+}
+
+footer a {
+    display: block;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* BOTÃO VOLTAR TOPO */
+.voltar-topo{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    background: var(--cor-secundaria);
+    color: var(--cor-primaria);
+
+    border-radius: 50%;
+
+    text-align: center;
+    line-height: 40px;
+}
+
+.voltar-topo:hover{
+    background: var(--cor-primaria);
+}
+
